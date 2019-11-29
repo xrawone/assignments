@@ -1,0 +1,65 @@
+
+
+.main-box{
+
+    width:500px;
+
+    height:500px;
+
+    background-color:#87c3f2;
+
+    position:relative;
+
+    padding: 3px;
+
+    border-radius: 1px solid red;
+
+    margin:0px;
+
+    float:left;
+
+   
+
+}
+
+.box{
+
+    display: block;
+
+    border:1px solid black;
+
+    padding: 1px;
+
+}
+
+
+
+.info{
+
+    float: right;
+
+    width:140px;
+
+    
+
+    
+
+}
+
+.info h2{
+
+    font-size:18x;
+
+    margin-top: 255px;
+
+    padding-right: 35px;
+
+    font-weight: bold;
+
+    background-color:black;
+
+    color:#fff;
+
+ 
+
+}
