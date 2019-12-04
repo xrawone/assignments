@@ -26,11 +26,13 @@ var obstacles;
 obstacle1=new Obstacles();
 obs.push(obstacle1);
 ctx.drawImage(BASEGROUND,init,CANVAS_HEIGHT-bg,CANVAS_WIDTH,bg);
- pipeCreation=setInterval(creator,3000);
+ pipeCreation=setInterval(creator,2000);
 gameloop();
 function clearCanvas(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    ctx.drawImage(BACKGROUND,0,0);            
+    ctx.drawImage(BACKGROUND,0,0,550,CANVAS_HEIGHT);
+    //ctx.drawImage(BACKGROUND,293,0);
+                
     bird.draw();
 }
 setInterval(()=>{bird.motion()},16.66);
@@ -65,7 +67,7 @@ function gameloop(){
        obs[i].collision(bird);
        if (obs[i].x1+obs[i].width<-10){
         obs.splice(obs,1);
-        counter++
+        counter++;
       }
    }
  
@@ -94,25 +96,26 @@ function gameOver(){
 function gameEnd(){
     ctx.clearRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
     ctx.drawImage(BACKGROUND,0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
-    ctx.drawImage(RESTART,50,180,192,42);
-    ctx.drawImage(SCOREBOARD,40,280,225,114);
+    ctx.drawImage(RESTART,190,10,192,42);
+
+    ctx.drawImage(SCOREBOARD,180,280,225,114);
     if (counter%10<=5){
-    ctx.drawImage(BRONZE,67,325,40,40);
+    ctx.drawImage(BRONZE,67+143,325,40,40);
     }
     else if(counter%10>=5 && counter%10<=10){
-    ctx.drawImage(SILVER,67,325,40,40);
+    ctx.drawImage(SILVER,67+143,325,40,40);
     }
     else {
-    ctx.drawImage(GOLD,67,320,40,40);
+    ctx.drawImage(GOLD,67+143,320,40,40);
     }
     ctx.font="30px Arial"
     ctx.fillStyle="#fca048"
-    ctx.fillText(counter,215,335);
-    ctx.fillText(highScore,215,380);
+    ctx.fillText(counter,215+145,335);
+    ctx.fillText(highScore,215+145,380);
     ctx.font="32px Flappy";
     ctx.fillStyle="#fff";
-    ctx.fillText(`Click on the Screen`,50,100);
-    ctx.fillText('to play again',80,130);
+    ctx.fillText(`Click on the Screen`,200-20,440);
+    ctx.fillText('to play again',230-20,470);
     document.addEventListener('click',game);
     }
 

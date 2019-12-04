@@ -1,6 +1,6 @@
 
 const CANVAS_HEIGHT=512;
-const CANVAS_WIDTH=288;
+const CANVAS_WIDTH=550;
 const bg=118;
 let bgwidth=288;
 const BACKGROUND=new Image();

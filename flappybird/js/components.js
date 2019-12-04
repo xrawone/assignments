@@ -6,8 +6,8 @@ function getRandom(min,max){
 class Bird{
     constructor(){
         this.x=10;
-        this.width=25;
-        this.height=23.375;
+        this.width=30;
+        this.height=26;
         this.y=CANVAS_HEIGHT/2-this.height;
         this.index = 0;
         setInterval(() => {
@@ -25,7 +25,7 @@ class Bird{
 }
 class Obstacles{
     constructor(){
-        this.x1=700;
+        this.x1=550;
         this.y1=0; 
         this.height1=getRandom(50,245);
         this.y2=this.height1+100;
@@ -40,7 +40,7 @@ class Obstacles{
 
     }
     move(){
-        this.x1-=1.2;
+        this.x1-=2;
     }
     collision(bird){
         
