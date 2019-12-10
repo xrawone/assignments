@@ -1,20 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
+
+
+.main-box{
+
+    width:500px;
+
+    height:500px;
+
+    background-color:#87c3f2;
+
+    position:relative;
+
+    padding: 3px;
+
+    border-radius: 1px solid red;
+
+    margin:0px;
+
+    float:left;
+
+   
+
 }
 
-body {
-    width: 100%;
-}
+.box{
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-canvas {
-    padding: 0;
-    margin: 100px auto 0px;
     display: block;
-    background: #e8eaf6;
+
+    border:1px solid black;
+
+    padding: 1px;
+
+}
+
+
+
+.info{
+
+    float: right;
+
+    width:140px;
+
+    
+
+    
+
+}
+
+.info h2{
+
+    font-size:18x;
+
+    margin-top: 255px;
+
+    padding-right: 35px;
+
+    font-weight: bold;
+
+    background-color:black;
+
+    color:#fff;
+
+ 
+
 }
