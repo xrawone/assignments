@@ -479,7 +479,7 @@ section
       background: var(--clr2)
       border-radius: var(--text-radius)
 
-@media (max-width: 640px){
+@media (max-width: 480px){
   section.cards .card
     width: 100%
     display: block
