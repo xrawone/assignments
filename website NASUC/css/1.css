@@ -479,7 +479,7 @@ section
       background: var(--clr2)
       border-radius: var(--text-radius)
 
-@media (max-width: 728px)
+@media (max-width: 640px){
   section.cards .card
     width: 100%
     display: block
@@ -488,8 +488,7 @@ section
   .wrapper
     padding: 50px 10px 100px 10px!important
   #content-desktop {display: none;}
-
-
+      }
 
 
 
